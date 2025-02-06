@@ -54,6 +54,7 @@ namespace DatabaseTask.Core.Domain
         //public IEnumerable<Children> Childrens { get; set; } = new List<Children>();
         //public ICollection<Children> Childrens { get; set; }
         //public List<Children> Childrens { get; set; }
+        //public Children Childrens { get; set; }
     }
 
 
