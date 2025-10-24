@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
 
 
 namespace DatabaseTask.Core.Domain
@@ -6,9 +7,13 @@ namespace DatabaseTask.Core.Domain
     public class Employee
     {
         [Key]
-        public Guid Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public int Id { get; set; }
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public int Salary { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public int GroupId { get; set; }
+        public Group Group { get; set; } = null!;
 
         /// ESIMENE HINDELINE HARJUTUS
         /// Nõuded ja tegevus:
